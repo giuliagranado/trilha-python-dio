@@ -1,0 +1,27 @@
+resumo Microsoft Copilot Studio
+
+site: copilotstudio.microsoft.com
+   -> usar contra microsoft
+
+criar copilot com modelo
+   -> escolha o modelo, em "create"
+   -> preencha os dados ( como o nome, a descrição
+      intruções - forma de se comportar, prompts)
+   -> se precisar, add outra ou trocar base de conhecimento
+   -> criar
+
+criar copilot com IA
+   -> na pagina inicial você coloca as intruções/
+      os prompts
+   -> preencha os dados ( como o nome, a descrição
+      intruções - forma de se comportar, prompts)
+   -> se precisar, add outra ou trocar base de conhecimento
+   -> criar
+
+criar um Copilot em branco
+   -> entra no ambiente já criado
+   -> coloca foto de icon
+   -> preencha os dados ( como o nome, a descrição
+      intruções - forma de se comportar, prompts)
+   -> add tópicos e outros
+   -> criar 
