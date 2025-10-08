@@ -1,8 +1,9 @@
 import textwrap
 
-# Criando um Sistema Bancário com Python Orientado a Objetos
+# criando um Sistema Bancário com Python Orientado a Objetos
 import textwrap
 
+# criando a classe Usuario
 class Usuario:
     def __init__(self, nome, cpf, data_nascimento, endereco):
         self.nome = nome
@@ -10,8 +11,9 @@ class Usuario:
         self.data_nascimento = data_nascimento
         self.endereco = endereco
 
+# criando a classe Conta
 class Conta:
-    def __init__(self, agencia, numero, usuario):
+    def __init__(self, agencia, numero, usuario): 
         self.agencia = agencia
         self.numero = numero
         self.usuario = usuario
@@ -21,6 +23,7 @@ class Conta:
         self.numero_saques = 0
         self.limite_saques = 3
 
+# métodos da classe Conta
     def depositar(self, valor):
         if valor > 0:
             self.saldo += valor
@@ -50,6 +53,7 @@ class Conta:
         print(f"\nSaldo:\t\tR$ {self.saldo:.2f}")
         print("==========================================")
 
+# exibe o menu e retorna a opção escolhida
 def menu():
     menu = """\n
     ================ MENU ================
@@ -63,6 +67,7 @@ def menu():
     => """
     return input(textwrap.dedent(menu))
 
+# função para criar um novo usuário, verificando se o CPF já existe
 def criar_usuario(usuarios):
     cpf = input("Informe o CPF (somente número): ")
     for usuario in usuarios:
@@ -75,6 +80,7 @@ def criar_usuario(usuarios):
     usuarios.append(Usuario(nome, cpf, data_nascimento, endereco))
     print("=== Usuário criado com sucesso! ===")
 
+# função para criar uma nova conta, vinculada a um usuário existente
 def criar_conta(agencia, numero_conta, usuarios, contas):
     cpf = input("Informe o CPF do usuário: ")
     usuario = next((u for u in usuarios if u.cpf == cpf), None)
@@ -85,6 +91,7 @@ def criar_conta(agencia, numero_conta, usuarios, contas):
     else:
         print("\n@@@ Usuário não encontrado, fluxo de criação de conta encerrado! @@@")
 
+# visualiza as contas cadastradas
 def listar_contas(contas):
     for conta in contas:
         linha = f"""\
@@ -95,6 +102,7 @@ def listar_contas(contas):
         print("=" * 100)
         print(textwrap.dedent(linha))
 
+# função principal do sistema bancário
 def main():
     AGENCIA = "0001"
     usuarios = []
@@ -153,5 +161,4 @@ def main():
 
         else:
             print("Operação inválida, por favor selecione novamente a operação desejada.")
-
 main()
