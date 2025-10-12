@@ -1,0 +1,29 @@
+ >> Criando um Copiloto com Fluxo de Conversa
+    Personalizado no Microsoft Copilot Studio
+
+-> criar agente em branco
+-> dar prefêrencia pelo uso do inglês
+
+-> descrição: o que o agente vai fazer
+-> intruções: de como falar, agir em detalhes. 
+   colocar em lista, começando com verbo infinitivo 
+-> add knowledge:
+-> configurações avançadas: permite que exportemos a 
+   a solução/resposta para outro ambiente, se preciso
+
+-> customização: na aba tópicos > add em branco > frases de gatilho
+   em data sources : customizar ainda + os gatilhos
+
+-> personalizar mensagem de erro: 
+   topicos > conversation > se a resposta não for em branco
+   topicos > fallback > tudo que acontecer de falhar vai cair na msg erro
+-> personalizar mensagem erro: topicos > conversating boosting 
+     > all other conditions > message
+
+**overview >> prompts
+** se o o prompt + conteudo da variavel = +8000 caracteres = vai dar erro
+
+
+
+
+
